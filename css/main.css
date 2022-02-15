@@ -1,0 +1,683 @@
+*{margin: 0; padding: 0;}
+@font-face {
+    font-family: 'OTWelcomeRA';  /*웰컴체 Regular*/
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Ubuntu:ital,wght@1,500&display=swap');
+li{list-style: none;}
+a{display: block; text-decoration: none; color: #333;  font-family: 'OTWelcomeRA';/*웰컴체 Regular*/}
+img{width: 100%;}
+html,body{  font-family: 'OTWelcomeRA';/*웰컴체 Regular*/}
+div, header,section,footer{
+    box-sizing: border-box ;
+}
+h1{font-family: 'Arimo', sans-serif;}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 6.8vw;
+    height: 100vh;
+    background-color: #fafafa;
+    border-right: 1px solid #333;
+}
+header .logo{ 
+    width: 6vw;
+    height: 6vw;
+    background-image: url(../img/logo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .logo:hover{
+    width: 6vw;
+    height: 6vw;
+    background-image: url(../img/logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .hover{
+    width: 2.6vw;
+    height: 2.6vw;
+    margin-left: 3vw;
+}
+header nav{
+ margin-top: 4vw;
+}
+header nav ul li a{
+    padding: 1vw;
+    font-size: 1vw;
+    text-align: center;
+    color: #555;
+}
+header nav ul li a:hover{
+    background-color: #ffa999;
+    color: #fff;
+}
+header .sns{
+    margin-top: 1.7vw;
+}
+
+header .sns ul li a{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    text-indent: -9999px;
+    height: 3.5vw;
+}
+header .sns ul li:first-child a{
+    background-image: url(../img/sns_icon.png);
+}
+header .sns ul li:first-child a:hover{
+    background-image: url(../img/sns_icon-1.png);
+}
+header .sns ul li:last-child a{
+    background-image: url(../img/sns_icon2.png);
+}
+header .sns ul li:last-child a:hover{
+    background-image: url(../img/sns_icon2-1.png);
+}
+header .sns ul li:hover{
+    background-color: #ffa999;
+}
+header .search{
+    position: absolute;
+    bottom: 1vw;
+    left: 2.6vw;
+    width: 1.3vw;
+    height: 1.3vw;
+    background-image: url(../img/search_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+}
+/* intro 애니메이션*/
+
+/* 그림 애니메이션 */
+.section .intro_ani1 img{
+    width: 50vw;
+    margin-left: 20vw;
+}
+/* 글자애니메이션 파트 */
+.section .intro_txt{
+    width: 60vw;
+    margin: 0 auto;
+}
+.section .intro_txt .intro_ani{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 3s linear forwards;
+}
+@keyframes dash{
+    from{
+        stroke-dashoffset: 1000;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+.section .intro_txt #_x3C_Path_x3E_s{
+    animation-delay: 0.1s;
+}
+.section .intro_txt #_x3C_Path_x3E_u{
+    animation-delay: 0.4s;
+}
+.section .intro_txt #_x3C_Path_x3E_n{
+    animation-delay: 0.7s;
+}
+.section .intro_txt #_x3C_Path_x3E_p{
+    animation-delay: 1.0s;
+}
+.section .intro_txt #_x3C_Path_x3E_o1{
+    animation-delay: 1.3s;
+}
+.section .intro_txt #_x3C_Path_x3E_r{
+    animation-delay: 1.6s;
+}
+.section .intro_txt #_x3C_Path_x3E_t{
+    animation-delay: 1.9s;
+}
+.section .intro_txt #_x3C_Path_x3E_tt{
+    animation-delay: 2.2s;
+}
+.section .intro_txt #_x3C_Path_x3E_f{
+    animation-delay: 2.5s;
+}
+.section .intro_txt  #_x3C_Path_x3E_ff{
+    animation-delay:  2.8s;
+}
+.section .intro_txt #_x3C_Path_x3E_o2{
+    animation-delay: 3.1s;
+}
+.section .intro_txt  #_x3C_Path_x3E_l{
+    animation-delay: 3.4s;
+}
+.section .intro_txt  #_x3C_Path_x3E_ii{
+    animation-delay: 3.7s;
+}
+.section .intro_txt  #_x3C_Path_x3E_i{
+    animation-delay: 4s;
+}
+.section .intro_txt  #_x3C_Path_x3E_o3{
+    animation-delay: 3.4s;
+}
+
+/* section */
+section{
+    padding-left: 6vw;
+    overflow: hidden;
+}
+section h1{
+    text-align: center;
+    font-size: 2.6vw;
+    color: #333;
+    margin-bottom: 3vw;
+    opacity: 0;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+section h1.active{
+    opacity: 1;
+}
+.section .box{ 
+    width: 80%;
+    height: 75%;
+    margin: 0 auto;
+    position: relative;
+    /* border: 1px solid #999; 임시 */
+}
+.section .box > div{
+    width: 60%;
+    position: absolute;
+    /* border: 1px solid #999; 임시 */
+}
+.section .box .photo{
+    width: 29%;
+    height: 52.4vh;
+    top: 0;
+    left: -100vw;
+    border: 1px solid #555;
+    transition: all 0.7s;
+    transition-delay:0.3s ;
+}
+.section .box .photo.active{
+    left: 0;
+}
+.section .box .career{
+    top: 7%;
+    right:-100vw;
+    transition: all 0.7s;
+    transition-delay:0.3s ;
+}
+.section .box .career.active{
+    right: 0;
+}
+.section .box .prf{
+    top: 53vh;
+    left: -100vw;
+    transition: all 0.7s;
+    transition-delay:0.3s ;
+}
+.section .box .prf p{
+    font-size: 1vw;
+    line-height: 1.3vw;
+}
+.section .box .prf.active{
+    left: 0;
+}
+.section .box .skill{
+    top: 40%;
+    right: -100vw;
+    transition: all 0.7s;
+    transition-delay:0.3s ;
+}
+.section .box .skill.active{
+    right: 0;
+}
+.section .box h2{
+    font-size: 1.6vw;
+    margin-bottom: 1vw;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+/* 프로필(portfolio) 도형 시작 */
+.section .box-icon1{
+    border-radius: 30px;
+    position: absolute;
+    width: 12vw;
+    height: 2vw;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: #ffa999;
+    left: 48.5%;
+    top: 4vw;
+}
+.section .box-icon1.active{
+    opacity: 1;
+}
+.section .box .box-icon2{
+    border-radius: 30px;
+    position: absolute;
+    width: 6vw;
+    height: 1.3vw;
+    background-color: #fcdada;
+    left: 0.7vw;
+    top: 0.2vw;
+}
+
+.section .box .box-icon3{
+    border-radius: 30px;
+    position: absolute;
+    width: 4vw;
+    height: 1.3vw;
+    background-color: #fcdada;
+    left: 0.6vw;
+}
+.section .box p{
+    font-size: 1vw;
+    line-height: 1.7vw;
+}
+.section .box p span{
+    color: #3D7EA6;
+}
+/* skillbar */
+.container-skillbar {
+    width:100%;
+    padding-top:30px;
+    height:auto;
+    overflow:none;
+}
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    width:100%;
+    background:#efefef;
+    height:30px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    font-weight:bold;
+    font-size:13px;
+    color:#fff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.15);
+    padding:0 20px;
+    height:30px;
+    line-height:30px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height:30px;
+    width:0px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:30px;
+    line-height:30px;
+    color:#ffffff;
+    color:rgba(0, 0, 0, 0.5);
+}
+/* web */
+.section .box .swiper{
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 0.5s;
+}
+.section .box .swiper.active{
+    top: 0;
+    opacity: 1;
+}
+.section .box .swiper .swiper-slide{
+    /* background-color: #fff; */
+    padding: 3vw;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.section .box .swiper .swiper-slide > div{
+    width: 50%;
+}
+.section .box .swiper .swiper-slide_des{
+    padding: 2vw;
+}
+.section .box .swiper .swiper-slide .slide_des .number{
+    text-align: right;
+    color: #999;
+    padding-right: 3vw;
+}
+.section .box .swiper .swiper-slide .slide_des .number p{
+    font-size: 1vw;
+}
+.section .box .swiper .swiper-slide .slide_des .number p b{
+    font-size: 2vw;
+    color: #5c969e;
+}
+.section .box .swiper .swiper-slide .slide_des .slide_btn{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 1vw;
+}
+.section .box .swiper .swiper-slide .slide_des .slide_btn a{
+    border-radius: 20px;
+    border: 1px solid #999;
+    background-color: #efefef;
+    padding: 0.7vw 1.5vw 0.6vw;
+    font-size: 0.8vw;
+    margin-right: 1vw;
+}
+.section .box .swiper .swiper-slide .slide_des .slide_btn a:hover{
+    background-color:#3d7ea6 ;
+    color: #fff;
+}
+.section .box .swiper .swiper-slide p img{
+    width: 5vw;
+}
+.section .box .swiper .swiper-slide .slide_img{
+    width: 32vw;
+    margin-right: 3vw;
+    padding: 1vw;
+}
+/* s2 (web) 도형시작 */
+.section .box-icon4{
+    border-radius: 30px;
+    position: absolute;
+    width: 16.7vw;
+    height: 2.5vw;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: #ffa999;
+    left: 45.5%;
+    top: 3.8vw;   
+}
+.section .box-icon4.active{
+opacity: 1;
+}
+.section .box .swiper .swiper-slide .slide_des{
+    position: relative;
+}
+.section .box .swiper .swiper-slide .slide_des .box-icon5{
+    border-radius: 30px;
+    position: absolute;
+    width: 10vw;
+    height: 1.6vw;
+    background-color: #fcdada;
+    left: 1vw;
+}
+.section .box .swiper .swiper-slide .slide_des .box-icon6{
+    border-radius: 30px;
+    position: absolute;
+    width: 7.6vw;
+    height: 1.6vw;
+    background-color: #fcdada;
+    left: 0.6vw;
+}
+.section .box .swiper .swiper-slide .slide_des .box-icon7{
+    border-radius: 30px;
+    position: absolute;
+    width: 8.8vw;
+    height: 1.6vw;
+    background-color: #fcdada;
+    left: 0.8vw;
+}
+/*.drawing ,editorial,contact 제목도형 */
+.section .box-icon8{
+    border-radius: 30px;
+    position: absolute;
+    width: 16.9vw;
+    height: 2.5vw;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: #ffa999;
+    top: 3.7vw;
+    left: 45.4%;
+      
+}
+.section .box-icon8.active{
+    opacity: 1;
+}
+.section .box-icon9{
+    border-radius: 30px;
+    position: absolute;
+    width: 22.8vw;
+    height: 2.8vw;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: #ffa999;
+    top: 3.7vw;
+    left: 42.8%;
+      
+}
+.section .box-icon9.active{
+    opacity: 1;
+}
+.section .box-icon10{
+    border-radius: 30px;
+    position: absolute;
+    width: 15vw;
+    height: 2.5vw;
+    opacity: 1;
+    transition: all 0.5s;
+    background-color: #ffa999;
+    top: 3.7vw;
+    left: 46.8%;
+      
+}
+.section .box-icon8.active{
+    opacity: 1;
+}
+
+
+/* editorial */
+.section .box .gallery{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    top: 100vh;
+    transition: all 1s;
+    transition-delay: 0.5s;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.section .box .gallery.active{
+    opacity: 1;
+    top: 0;
+}
+.section .box .gallery .thum_img{
+    width: 30%;
+    height: 50vw;
+}
+.section .box .gallery .thum_img ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.section .box .gallery .thum_img ul li{
+    width: 48%;
+}
+.section .box .gallery .big_img{
+    width: 70%;
+    padding-left: 5vw;
+    position: relative;  /*자식객체 li 겹칭때 기준이됌*/
+}
+.section .box .gallery .big_img ul li{
+position: absolute;
+}
+/* drawing */
+.section .box .mySwiper2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+    transition-delay:0.5s;
+}
+.section .box .mySwiper2.active{
+    top: 0;
+    opacity: 1;
+}
+.section .box .mySwiper2 .swiper-slide{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 25vw;
+}
+.section .box .mySwiper2 .d_img1{
+    background-image: url(../img/drawing1.jpg);
+}
+.section .box .mySwiper2 .d_img2{
+    background-image: url(../img/drawing2.jpg);
+}
+.section .box .mySwiper2 .d_img3{
+    background-image: url(../img/drawing3.jpg);
+}
+.section .box .mySwiper2 .d_img4{
+    background-image: url(../img/drawing4.jpg);
+}
+.section .box .mySwiper2 .d_img5{
+    background-image: url(../img/drawing5.jpg);
+}
+.section .box .swiper-slide .d_txt p{
+    font-size: 1vw;
+}
+.section .box .swiper-slide .d_txt .b_box-icon{
+    border-radius: 30px;
+    position: absolute;
+    width: 10vw;
+    height: 1.6vw;
+    background-color: #fcdada;
+    left: 3vw;
+}
+/* 드로잉 숫자 */
+.section .box .mySwiper2 .swiper-slide .d_txt .number{
+    padding-bottom: 3vw;
+    font-size: 2vw;
+}
+.section .box .mySwiper2 .swiper-slide .d_txt .number p{
+    color: #999;
+    font-size: 1vw;
+}
+.section .box .mySwiper2 .swiper-slide .d_txt .number p b{
+    font-size: 2vw;
+    color: #5c969e;
+}
+/* contact */
+.section .box .contact_wrap{
+    border: 1px solid #999;
+    width: 80%;
+    height: 60vh;
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 0.5s;
+    padding-top: 4vw;
+    padding-right: 2vw;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-left: 7vw;
+}
+.section .box .contact_wrap.active{
+    opacity: 1;
+}
+.section .box .contact_wrap .contact_img{
+    width: 40%;
+    height: 40vh;
+}
+.section .box .contact_wrap .contact_img img{
+    width: 20vw;
+    margin-left: 3vw;
+}
+.section .contact_wrap.active form{
+    width: 50%;
+}
+.section .contact_wrap form fieldset{
+    border: none;
+    margin: 0.7vw 0;
+}
+
+.section .contact_wrap form fieldset label{
+    font-size: 1vw;
+}
+.section .contact_wrap form fieldset input{
+    width: 23vw;
+    padding: 0.7vw;
+    margin-left: 1vw;
+}
+.section .contact_wrap form fieldset textarea{
+    padding: 0.7vw;
+    margin-left: 1vw;
+    width: 23vw;
+}
+.section .contact_wrap form button{
+    border: none;
+    background-color: #3D7EA6;
+    color: #fff;
+    font-size: 0.7vw;
+    padding: 0.6vw;
+    float: right;
+    margin-right: 0.5vw;
+    cursor: pointer;
+}
+/* footer */
+footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 0.7vw;
+    text-align: right;
+    color: #444;
+    padding: 0.3vw 0.5vw;
+}
