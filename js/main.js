@@ -2,7 +2,8 @@ $(document).ready(function(){
     //fuiipage
     $('#fullpage').fullpage({
 		anchors:['intro', 'profile','web','edit','drawing','contact'],
-         sectionsColor:['#fcdada','#fff','#fff','#fff0f0','#fff','#fff0f0'],     //  섹션별 색깔넣는법
+         sectionsColor:['#fcdada','#fff','#fff','#fff0f0','#fff','#fff0f0'], //  섹션별 색깔넣는법
+         menu:"#myMenu",    
         //현재 섹션이 나타난 후(활성화 된후, 열란후)
         afterLoad: function(anchorLink,index){
             //만약 활성화 된 section이 두번째 section이면

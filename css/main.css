@@ -55,7 +55,8 @@ header nav ul li a{
     text-align: center;
     color: #555;
 }
-header nav ul li a:hover{
+header nav ul li:hover a,
+header nav ul li.active a {
     background-color: #ffa999;
     color: #fff;
 }
