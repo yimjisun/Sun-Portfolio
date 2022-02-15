@@ -201,7 +201,7 @@ section h1.active{
 }
 .section .box .photo{
     width: 29%;
-    height: 52.4vh;
+    height: 55.7vh;
     top: 0;
     left: -100vw;
     border: 1px solid #555;
@@ -221,7 +221,7 @@ section h1.active{
     right: 0;
 }
 .section .box .prf{
-    top: 53vh;
+    top: 57vh;
     left: -100vw;
     transition: all 0.7s;
     transition-delay:0.3s ;
