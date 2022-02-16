@@ -204,7 +204,6 @@ section h1.active{
     height: 55.7vh;
     top: 0;
     left: -100vw;
-    border: 1px solid #555;
     transition: all 0.7s;
     transition-delay:0.3s ;
 }
@@ -598,6 +597,9 @@ position: absolute;
     height: 1.6vw;
     background-color: #fcdada;
     left: 3vw;
+}
+.section .box .mySwiper2 .swiper-button-next,.section .box .mySwiper2 .swiper-button-prev{
+    color: #333;
 }
 /* 드로잉 숫자 */
 .section .box .mySwiper2 .swiper-slide .d_txt .number{

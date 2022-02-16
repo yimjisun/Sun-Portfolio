@@ -62,10 +62,16 @@ $(document).ready(function(){
         $('.big_img ul li').hide();
         $('.big_img ul li').eq(idx).fadeIn();
     });
-    var swiper = new Swiper(".mySwiper2", {
-        scrollbar: {
-          el: ".swiper-scrollbar",
-          hide: true,
+        var swiper = new Swiper(".mySwiper2", {
+            loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+          
         },
-    });
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 });
