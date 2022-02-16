@@ -618,7 +618,7 @@ position: absolute;
 .section .box .contact_wrap{
     border: 1px solid #999;
     width: 80%;
-    height: 60vh;
+    height: 65vh;
     opacity: 0;
     transition: all 1s;
     transition-delay: 0.5s;
