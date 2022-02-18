@@ -46,12 +46,12 @@ $(document).ready(function(){
 			},3000);
 		});
 	});
-    var swiper = new Swiper('.swiper', {
+    var swiper = new Swiper('.mySwiper1', {
         loop: true,
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: 'mySwiper1 .swiper-button-next',
+          prevEl: 'mySwiper1 .swiper-button-prev',
         }
     });
     //editoroal gallery
@@ -70,8 +70,8 @@ $(document).ready(function(){
           
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".mySwiper2 .swiper-button-next",
+          prevEl: ".mySwiper2 .swiper-button-prev",
         },
       });
 });
