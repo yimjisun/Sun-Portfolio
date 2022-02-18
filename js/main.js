@@ -50,8 +50,8 @@ $(document).ready(function(){
         loop: true,
         // Navigation arrows
         navigation: {
-          nextEl: 'mySwiper1 .swiper-button-next',
-          prevEl: 'mySwiper1 .swiper-button-prev',
+          nextEl: '.mySwiper1 .swiper-button-next',
+          prevEl: '.mySwiper1 .swiper-button-prev',
         }
     });
     //editoroal gallery
